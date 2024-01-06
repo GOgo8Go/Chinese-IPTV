@@ -28,14 +28,14 @@ jobs:
           path: release
           ref: master
 
-      /*- name: prepare generater
+      /*- name: prepare generater */
         uses: actions/checkout@v2
         with: 
           repository: BurningC4/getepg
           ssh-key: ${{ secrets.GETEPG }}
           path: getepg
-          ref: main
-       */
+          ref: main 
+       
       - name: get new epg file
         run: |
           sudo pip3 install -r getepg/requirements.txt
