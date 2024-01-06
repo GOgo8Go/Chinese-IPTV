@@ -28,7 +28,7 @@ jobs:
           path: release
           ref: master
 
-      /*- name: prepare generater */
+      - name: prepare generater 
         uses: actions/checkout@v2
         with: 
           repository: BurningC4/getepg
